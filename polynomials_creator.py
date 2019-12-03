@@ -7,4 +7,3 @@ def polynomials(*args):
         for n,i in zip(args[1:],range(2,a+1)):
             f+=f"+({n})*x**{a-i}"
     return f
-print(polynomials(8))
