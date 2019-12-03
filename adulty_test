@@ -1,17 +1,10 @@
 import datetime
-from datetime import timedelta
+def adulty_test(year=1970,month=1,day=1):
+    now = datetime.datetime.now()
+    adult_year = datetime.datetime(now.year - 18, now.month, now.day)
+    if adult_year >= datetime.datetime(year,month,day):
+        print("You are adult")
+    else:
+        print("You are not adult")
 
-now=datetime.datetime.now()
-adult_year=datetime.datetime(now.year-18,now.month,now.day)
-
-birth_date=input("type your birth date (YYYY-MM-DD)")
-
-birth_year,birth_month,birth_day=birth_date.split("-")
-birth_year=int(birth_year)
-birth_month=int(birth_month)
-birth_day=int(birth_day)
-
-if adult_year>=datetime.datetime(birth_year,birth_month,birth_day):
-    print("You are adult")
-else:
-    print("You are not adult")
+adulty_test(1903,3,5)
