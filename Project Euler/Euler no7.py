@@ -26,7 +26,7 @@ def n_prime_number(number):
     numb=2
     while n!=number:
         numb+=1
-        if is_prime(numb) is True:
+        if is_prime(numb):
             n+=1
     return numb
 print(n_prime_number(10001))

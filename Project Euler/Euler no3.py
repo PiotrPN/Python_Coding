@@ -20,7 +20,7 @@ def is_prime(n):
 n=3
 while True:
     if 600851475143%n==0:
-        if is_prime(600851475143/n) is True:
+        if is_prime(600851475143/n):
             print("found largest prime factor")
             print(600851475143/n)
             break
