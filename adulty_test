@@ -3,6 +3,6 @@ def adulty_test(year=1970,month=1,day=1):
     now = datetime.datetime.now()
     adult_year = datetime.datetime(now.year - 18, now.month, now.day)
     if adult_year >= datetime.datetime(year,month,day):
-        print("You are adult")
+        return False
     else:
-        print("You are not adult")
+        return True

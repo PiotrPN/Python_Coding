@@ -24,6 +24,3 @@ def encrypt(tekst,numer):
         else:
             wyraz+=n
     return wyraz
-print(encrypt(crypt("ala ma kota",29),3))
-print(crypt("sierotka ma rysia",15))
-print(encrypt("HXTGDIZP BP GNHXP",15))
